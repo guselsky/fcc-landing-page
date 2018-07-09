@@ -5,12 +5,38 @@
     width: 100%;
     top:0;
     display: flex;
+    justify-content: space-around;
+}
+
+#flex-wrapper {
+    width: 1050px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #header-img {
-    
+    padding: 15px;
 }
 
+#nav-bar {
+   padding-right: 5px;
+   ul {
+       display: flex;
+       flex-wrap: nowrap;
+
+       li {
+
+        list-style: none;
+        padding-left: 15px;
+        a {
+               text-decoration: none;
+               font-size: 22px;
+            }
+        }
+    }
+}
+    
 #main-heading {
-    margin-top: 100px;
+    margin-top: 150px;
 }
