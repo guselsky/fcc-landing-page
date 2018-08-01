@@ -462,9 +462,23 @@ img {
           color: #B6504F; }
 
 #main-heading {
-  margin-top: 150px;
-  text-align: center; }
+  margin-top: 130px;
+  padding: 200px 0;
+  text-align: center;
+  background-color: #397EA8;
+  color: #fff; }
 
 .container-1050 {
   max-width: 1050px;
   margin: 0 auto; }
+
+.products__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.headings__section {
+  text-align: center;
+  margin: 25px 0; }
