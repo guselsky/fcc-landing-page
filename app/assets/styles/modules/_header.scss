@@ -3,7 +3,7 @@
     min-height: 50px;
     position: fixed;
     width: 100%;
-    top:0;
+    top: 0;
     display: flex;
     justify-content: space-around;
 }
@@ -20,23 +20,30 @@
 }
 
 #nav-bar {
-   padding-right: 5px;
-   ul {
-       display: flex;
-       flex-wrap: nowrap;
-
-       li {
-
-        list-style: none;
-        padding-left: 15px;
-        a {
-               text-decoration: none;
-               font-size: 22px;
+    padding-right: 15px;
+    ul {
+        display: flex;
+        flex-wrap: nowrap;
+        @include lessThan450 {
+            flex-direction: column;
+            text-align: right;
+        }
+        li {
+            list-style: none;
+            padding-left: 15px;
+            a {
+                text-decoration: none;
+                font-size: 20px;
+                color: $mainBlue;
+                &:hover {
+                    color: $mainOrange;
+                }
             }
         }
     }
 }
-    
+
 #main-heading {
     margin-top: 150px;
+    text-align: center;
 }

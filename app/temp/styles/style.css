@@ -437,19 +437,34 @@ img {
   padding: 15px; }
 
 #nav-bar {
-  padding-right: 5px; }
+  padding-right: 15px; }
   #nav-bar ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap; }
+    @media only screen and (max-width: 450px) {
+      #nav-bar ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: right; } }
     #nav-bar ul li {
       list-style: none;
       padding-left: 15px; }
       #nav-bar ul li a {
         text-decoration: none;
-        font-size: 22px; }
+        font-size: 20px;
+        color: #397EA8; }
+        #nav-bar ul li a:hover {
+          color: #B6504F; }
 
 #main-heading {
-  margin-top: 150px; }
+  margin-top: 150px;
+  text-align: center; }
+
+.container-1050 {
+  max-width: 1050px;
+  margin: 0 auto; }
