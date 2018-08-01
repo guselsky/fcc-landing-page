@@ -1,4 +1,13 @@
-.container-1050 {
-    max-width: 1050px;
-    margin: 0 auto;
+.container {
+
+    &__1050 {
+        max-width: 1050px;
+        margin: 0 auto;
+    }
+
+    &__centered {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
