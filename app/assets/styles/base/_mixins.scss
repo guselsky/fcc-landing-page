@@ -1,17 +1,5 @@
-@mixin bp-babyBear {
-	@media only screen and (min-width: 530px) {
-		@content;
-	}
-}
-
-@mixin bp-mamaBear {
-	@media only screen and (min-width: 800px) {
-		@content;
-	}
-}
-
-@mixin bp-papaBear {
-	@media only screen and (min-width: 1200px) {
+@mixin lessThan750 {
+	@media only screen and (max-width: 750px) {
 		@content;
 	}
 }

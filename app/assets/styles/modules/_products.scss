@@ -5,6 +5,15 @@
         justify-content: space-around;
         margin-bottom: 25px;
 
+        @include lessThan750 {
+            flex-direction: column;
+            
+            figure {
+                width: 300px;
+                margin: 0 auto 15px auto;
+            }
+        }
+            
         figcaption {
             text-align: center;
             padding-top: 10px;
