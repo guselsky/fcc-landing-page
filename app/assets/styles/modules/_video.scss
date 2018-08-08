@@ -1,0 +1,6 @@
+.video {
+    @include lessThan450 {
+        width: 300px;
+        height: auto;
+    }
+}
