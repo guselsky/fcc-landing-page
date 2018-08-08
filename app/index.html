@@ -1,56 +1,75 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>BJJ Equipment - Gis, Rashguards, Backpacks</title>
-		<meta name="keywords" content="Gi, Rashguard, Backpack">
-		<meta name="description" content="BJJ Equipment - Gis, Rashguards, Backpacks">
-		<!-- build:css assets/styles/styles.css -->
-		<link rel="stylesheet" type="text/css" href="./temp/styles/style.css">
-		<!-- endbuild -->
-		<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Roboto:400,400i,700" rel="stylesheet">
-		<link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
-		<script src="https://use.fontawesome.com/5d3d653dc7.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
-		<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
-		<!-- build:js assets/scripts/Vendor.js -->
-		<script src="./temp/scripts/Vendor.js"></script>
-		<!-- endbuild -->
-	</head>
-	<body>
-		<header id="header">
-			<div id="flex-wrapper">
-				<a href="#"><img src="/assets/images/bjj-equipment-logo.png" alt="BJJ-Logo" id="header-img"></a>
-				<nav id="nav-bar">
-					<ul>
-						<li><a href="#products" class="nav-link">Products</a></li>
-						<li><a href="#about-us" class="nav-link">About Us</a></li>
-						<li><a href="#contact" class="nav-link">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		
-		<h1 id="main-heading">BJJ Equipment - Gis, Rashguards, Backpacks</h1>
-		
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>BJJ Equipment - Gis, Rashguards, Backpacks</title>
+	<meta name="keywords" content="Gi, Rashguard, Backpack">
+	<meta name="description" content="BJJ Equipment - Gis, Rashguards, Backpacks">
+	<!-- build:css assets/styles/styles.css -->
+	<link rel="stylesheet" type="text/css" href="./temp/styles/style.css">
+	<!-- endbuild -->
+	<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Roboto:400,400i,700" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+	<script src="https://use.fontawesome.com/5d3d653dc7.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<!-- build:js assets/scripts/Vendor.js -->
+	<script src="./temp/scripts/Vendor.js"></script>
+	<!-- endbuild -->
+</head>
+
+<body>
+	<header id="header">
+		<div id="flex-wrapper">
+			<a href="#">
+				<img src="/assets/images/bjj-equipment-logo.png" alt="BJJ-Logo" id="header-img">
+			</a>
+			<nav id="nav-bar">
+				<ul>
+					<li>
+						<a href="#products" class="nav-link">Products</a>
+					</li>
+					<li>
+						<a href="#about-us" class="nav-link">About Us</a>
+					</li>
+					<li>
+						<a href="#contact" class="nav-link">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<h1 id="main-heading">BJJ Equipment - Gis, Rashguards, Backpacks</h1>
+
 	<article id="products" class="container__1050">
 		<h2 class="headings__section">Products</h2>
 		<div class="products__images">
-			<img src="/assets/images/gi.png" alt="Gis" class="products__image">
-			<img src="/assets/images/rashguard.png" alt="Rashguards" class="products__image">
-			<img src="/assets/images/backpack.png" alt="Backpacks" class="products__image">
+			<figure>
+				<img src="/assets/images/gi.png" alt="Gis" class="products__image">
+				<figcaption>Gis</figcaption>
+			</figure>
+			<figure>
+				<img src="/assets/images/rashguard.png" alt="Rashguards" class="products__image">
+				<figcaption>Rashguards</figcaption>
+			</figure>
+			<figure>
+				<img src="/assets/images/backpack.png" alt="Backpacks" class="products__image">
+				<figcaption>Backpacks</figcaption>
+			</figure>
 		</div>
 	</article>
 
-	<article id="about-us" class="container__1050">
+	<article id="about-us">
 		<h2 class="headings__section">About Us</h2>
-		<section class="container__centered">
-				<iframe width="420" height="315"
-				src="https://youtube.com/embed/sQ03MLVwdl8" frameborder="0" allowfullscreen>
-				</iframe>
-			<div>
-				<p>We create good quality BJJ gis and rashguards that you can rebrand for your academy. The more you buy the lower the cost. Our company has existed since 1999. <br />
-					All our Gis are manufactured using hemp and cotton.</p>
+		<section class="container__centered container__1050">
+			<iframe width="420" height="315" src="https://youtube.com/embed/sQ03MLVwdl8" frameborder="0" allowfullscreen id="video">
+			</iframe>
+			<div class="text-block text-block--white">
+				<p>We create good quality BJJ gis and rashguards that you can rebrand for your academy. The more you buy the lower the cost.
+					Our company has existed since 1999.
+					<br /> All our Gis are manufactured using hemp and cotton.</p>
 			</div>
 		</section>
 	</article>
@@ -58,12 +77,14 @@
 	<article id="contact" class="container__1050">
 		<h2 class="headings__section">Contact</h2>
 		<form action="https://www.freecodecamp.org/email-submit" id="form">
-		Name: <input type="text" name="name" placeholder="name">
-		Email: <input type="email" name="email" id="email" placeholder="email">
-		Message: <textarea></textarea>
-		<input type="submit" value="Send Email" id="submit">
-	</form>
+			Name:
+			<input type="text" name="name" placeholder="name"> Email:
+			<input type="email" name="email" id="email" placeholder="email"> Message:
+			<textarea></textarea>
+			<input type="submit" value="Send Email" id="submit">
+		</form>
 	</article>
 
 </body>
+
 </html>

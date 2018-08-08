@@ -3,5 +3,11 @@
     &__images {        
         display: flex;
         justify-content: space-around;
+        margin-bottom: 25px;
+
+        figcaption {
+            text-align: center;
+            padding-top: 10px;
+        }
     }
 }
