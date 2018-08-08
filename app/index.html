@@ -76,12 +76,20 @@
 
 	<article id="contact" class="container__1050">
 		<h2 class="headings__section">Contact</h2>
-		<form action="https://www.freecodecamp.org/email-submit" id="form">
-			Name:
-			<input type="text" name="name" placeholder="name"> Email:
-			<input type="email" name="email" id="email" placeholder="email"> Message:
-			<textarea></textarea>
-			<input type="submit" value="Send Email" id="submit">
+		<form action="https://www.freecodecamp.org/email-submit" id="form" class="form">
+			<div class="form__left-div">
+				<label for="name">Name:</label>
+				<input id="name" type="text" name="name" placeholder="name" class="form__name-field">
+				<label for="email">Email:</label> 
+				<input type="email" name="email" id="email" placeholder="email">
+			</div>
+			<div class="form__right-div">
+				<div>
+					<label>Message:</label>
+					<textarea placeholder="Message"></textarea>
+				</div>
+				<input id="submit" type="submit" value="Send Email" id="submit">
+			</div>
 		</form>
 	</article>
 

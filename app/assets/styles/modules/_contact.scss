@@ -1,0 +1,36 @@
+.form {
+
+    label {
+        display: none;
+    }
+
+    input {
+        border-radius: 3px;
+        padding: 2px 5px;
+    }
+
+    textarea {
+        border-radius: 3px;
+    }
+
+
+    &__left-div {
+        padding-right: 15px;
+    }
+
+    &__right-div {
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    width: 410px;
+    margin: 0 auto 30px auto;
+    display: flex;
+
+    &__name-field {
+        margin-bottom: 15px;
+    }
+
+}
