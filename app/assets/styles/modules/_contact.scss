@@ -1,21 +1,50 @@
 .form {
+    
+    width: 410px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
 
     label {
         display: none;
     }
 
-    input {
-        border-radius: 3px;
+    &__input-field {
+        background-color: #ddd;
         padding: 2px 5px;
+        height: 30px;
+    }
+    
+    input {
+        width: 300px;
+        border: none;
+        border-radius: 3px;
+        align-self: center;
     }
 
     textarea {
+        border: none;
         border-radius: 3px;
+        padding: 2px 5px;
+        align-self: center;
+        width: 300px;
+        height: 150px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
+    &__submit {
+        background-color: $mainBlue;
+        color: #fff;
+        padding: 10px;
+    }
 
     &__left-div {
         padding-right: 15px;
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
     }
 
     &__right-div {
@@ -23,11 +52,12 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding-left: 0;
+        div {
+            display: flex;
+            flex-direction: column;
+        }
     }
-
-    width: 410px;
-    margin: 0 auto 30px auto;
-    display: flex;
 
     &__name-field {
         margin-bottom: 15px;
