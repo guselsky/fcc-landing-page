@@ -1,11 +1,9 @@
 .form {
     
-    width: 410px;
     margin: 0 auto 30px auto;
     display: flex;
     flex-direction: column;
-    max-width: 320px;
-
+    
     label {
         display: none;
     }
@@ -41,18 +39,14 @@
     }
 
     &__left-div {
-        padding-right: 15px;
         display: flex;
         flex-direction: column;
-        padding-right: 0;
     }
 
     &__right-div {
-        padding-left: 15px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-left: 0;
         div {
             display: flex;
             flex-direction: column;
